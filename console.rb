@@ -29,7 +29,7 @@ ticket3.save()
 customer1.funds = 50
 customer1.update()
 
-
-
+p film1.customers
+p customer1.films
 # binding.pry
 # nil
