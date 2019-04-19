@@ -4,6 +4,10 @@ require_relative('models/tickets')
 
 require('pry-byebug')
 
+Ticket.delete_all()
+Film.delete_all()
+Customer.delete_all()
+
 film1 = Film.new({'title' => 'Seven Samurai', 'price' => '5'})
 film1.save()
 film2 = Film.new({'title' => 'Rashomon', 'price' => '4'})
@@ -25,7 +29,6 @@ ticket3.save()
 customer1.funds = 50
 customer1.update()
 
-film1.delete()
 
 
 # binding.pry
